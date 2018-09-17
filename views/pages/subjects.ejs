@@ -2,17 +2,19 @@
  <table class="table">
      <thead>
          <tr>
-             <th>ID</th>
+             <th>code</th>
              <th>Title</th>
-             <th>Price</th>
+             <th>credits</th>
+             <th>sections</th>
          </tr>
      </thead>
      <tbody>
-     <% products.forEach(function(product){ %>
+     <% subjects.forEach(function(subject){ %>
          <tr>
-             <td scope="row"><%= product.id %></td>
-             <td><%= product.title %></td>
-             <td><%= product.price %></td>
+             <td scope="row"><%= subject.code %></td>
+             <td><%= subject.title %></td>
+             <td><%= subject.credits %></td>
+             <td><%= subject.sections %></td>
          </tr>
          <% }); %>
              
